@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0; 
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;  
+}
+
+html {
+  scroll-behavior: smooth;  
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
+
+body {
+font-family: 'Poppins',sans-serif;
+background: var(--bg-color);
+color: var(--black-color);
+line-height: 1.7;
+}
+
+/*======GENERAL TAG STYLES==========*/
+
+h1,h2,h3,h4,h5{
+  font-weight: 500;
+}
+
+h1{
+  font-size: 2.5rem;
+}
+
+section{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5% 12%;
+  }
+
+section > h2,
+section > h5 {
+  text-align: center;
+  color: var(light-color);  
+}
+
+section > h2 {
+  color: var(--primary-color);
+  margin-bottom: 3rem; 
+}
+
+img{
+  width: 100%;
+  height: 100%;  
+}
+
+a{
+  color: var(--text-color);
+  transition: var(--transition);
+}
+a:hover{
+  color: var(--primary-color);  
+}
+
+p{
+  font-size: 1.1rem;
+  font-weight: 400;
+  color:  var(--subtext-color);
+}
+
+button{
+  width: 150PX;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  font-size: 1.3rem;
+  transition: var(--transition);
+}
+button:hover{
+  box-shadow: 0 0 20px var(--subtext-color);
+  cursor: pointer;
+}
+header{
+  background-image: url('./assets/pexels-karolina-grabowska-7679640.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100vh;
+  border-bottom-left-radius:  50% 20%;
+  border-bottom-right-radius: 50% 20%;  
+}
+
+input{
+  width: 100%;
+  height: 50px;
+  background-color: transparent;
+  border: 1px solid rgba(131, 131, 131, 0.5);
+  outline: none;
+  padding-left: 5%;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  color: var(--text-color);
+  & ::placeholder{
+    color: var(--text-color);
+  }
+
+}
+/*======GENERAL CLASSES STYLES==========*/
+.container{
+  width: var(--container-width-lg);
+  margin: 0 auto;
+}
+
+.text-light{
+  color: var(--light-color);
+}
+
+.btn{
+  width: max-content;
+  display: inline-block;
+  color: var(--primary-color);
+  padding: 0.75rem 1.2rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  border: 1px solid var(--primary-color);
+  transition: var(--transition);
+}
+
+.btn:hover{
+  background: var(--white-color);
+  color: var(--bg-color);
+  border-color: transparent;
+}
+
+.btn-primary{
+  background: var(--primary-color);
+  color: var(--bg-color);
+}
+  
+ .initial{
+    border: solid 1px rgb(215, 221, 216);
+  }
+
+ /*======MEDIA QUERIES (MEDIUM DEVICES)==========*/
+
+@media screen and (max-width:1024px) {
+  .container{
+    width: var(--container-width-md);
+  }
+  section{
+    margin-top: 6rem;
+  }  
+}
+
+ /*======MEDIA QUERIES (SMALL DEVICES)==========*/
+
+ @media screen and (max-width:600px) {
+  .container{
+    width: var(--container-width-sm);
+  }
+  section{
+    margin-bottom: 2rem;
+  }  
+}

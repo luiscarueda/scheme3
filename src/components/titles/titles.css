@@ -1,0 +1,19 @@
+.headings {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+}
+.headings h1{
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--text-color);    
+}
+.headings p{
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--subtext-color);
+}

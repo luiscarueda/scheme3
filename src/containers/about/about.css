@@ -1,0 +1,30 @@
+.about__container{
+    gap: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+}
+.about__content{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+}
+.about__image{
+    width: 50%;
+    position: relative;
+}
+.about__image-small{
+    position: absolute;
+    top: 65%;
+    right: -10%;
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px rgba(42, 42, 42, 0.439);
+}
