@@ -1,3 +1,11 @@
 .services__container{
     background-color: var(--bg-variant-color);
 }
+.services__cards{
+    margin-top: 50px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+
+}

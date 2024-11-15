@@ -5,20 +5,19 @@ import { TESTIMONIALS } from '../../constants/data'
 const Testimonials = () => {
   return (
     <section className='initial'>
-     <div>
+      <div className='testimonials__container'>
         <Titles title={TESTIMONIALS.title}
                 description={TESTIMONIALS.description}
-        />
-     
-      <div>
-        {TESTIMONIALS.data.map((item,index)=>(
+        />     
+       <div>
+         {TESTIMONIALS.data.map((item,index)=>(
            <TestimonialCard
-              key={index}
-              name={item.name}
-              opinion ={item.opinion}
+               key     = {index}
+               name    = {item.name}
+               opinion = {item.opinion}
            />))}        
-      </div>
-      </div>
+       </div>
+     </div>
     </section>
   )
 }

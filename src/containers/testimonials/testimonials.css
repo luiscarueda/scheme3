@@ -1,0 +1,4 @@
+.testimonials__container{
+    flex-direction: column;
+    background-color: var(--bg-variant-color);
+}

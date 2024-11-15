@@ -1,0 +1,12 @@
+.service__card{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.service__card-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}

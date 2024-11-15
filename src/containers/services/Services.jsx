@@ -2,8 +2,6 @@ import './services.css'
 import { SERVICES} from '../../constants/data'
 import { ServicesCard, Titles } from '../../components'
 
-
-
 const Services = () => {
   return (
     <section id='services'>
@@ -13,7 +11,7 @@ const Services = () => {
                    description={SERVICES.description}
           />         
         </div>
-        <div>
+        <div className='services__cards'>
           {SERVICES.data.map((item,index)=>(
             <ServicesCard key={index}
                           title={item.title}

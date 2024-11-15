@@ -1,21 +1,28 @@
 import './navbar.css'
-import { NAVBAR } from '../../constants/data'
-import { RiFacebookCircleFill } from "@remixicon/react";
+import {NAVLINKS} from '../../constants/data'
 
-const Navbar = () => {
+import Socials from '../socials/Socials';
+
+
+const Navbar = () => { 
+
+
   return (
     <nav>           
         <div className='logo'>
           <a href="#">SCHEME3</a>
           </div>     
         <ul className='menu'>
-        {NAVBAR.map((item,index)=>(
+        {NAVLINKS.map((item,index)=>(
                 <li key={index}>
                 <a href={item.href}>{item.label}</a>
                 </li>
               ))}
-        </ul> 
-        <div><RiFacebookCircleFill size={36} color="red"/></div>               
+        </ul>
+        <Socials/>      
+       
+   
+                  
     </nav>
   )
 }

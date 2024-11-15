@@ -1,12 +1,12 @@
 import { photo02 } from "./images";
 import { photo03 } from "./images";
 
-export const NAVBAR = [
+export const NAVLINKS = [
 
-  { href: "#home", label: "HOME" },
-  { href: "#about", label: "ABOUT" },
-  { href: "#services", label: "SERVICES" },
-  { href: "#contact", label: "CONTACT" },      
+  {label: "HOME" ,    href: "#home"    },
+  {label: "ABOUT",    href: "#about"   },
+  {label: "SERVICES", href: "#services"},
+  {label: "CONTACT",  href: "#contact" },      
 ];
 
 export  const HEADER = {
@@ -19,7 +19,7 @@ export const ABOUT = {
     tag: 'Get To Know',
     title:'ABOUT ME',
     description :'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a erat tristique, vehicula magna nec, pharetra velit. Nunc tincidunt magna nec lacinia cursus. In hac habitasse platea dictumst. Vivamus non nisl arcu. Ut nulla velit, ultrices vel sapien vel, condimentum elementum est. Suspendisse dui mauris, luctus in suscipit vel, commodo.',
-    photo  : photo02,
+    photo  :     photo02,
     photosmall : photo03,
   };
 
@@ -27,15 +27,27 @@ export  const SERVICES = {
     title:'Our Services',
     description :'lorem ipsum jhijh',
     data : [      
-        { id :1 , 
+        { 
           title: 'HOLA' , 
           description:'lorem',    
         },
-        { id :2 , 
+        { 
           title: 'SERVICES' , 
           description:'lorem2',
         },
-        { id :3 , 
+        { 
+          title: 'CONTENT' , 
+          description:'lorem3',         
+        },
+        { 
+          title: 'HOLA' , 
+          description:'lorem',    
+        },
+        { 
+          title: 'SERVICES' , 
+          description:'lorem2',
+        },
+        { 
           title: 'CONTENT' , 
           description:'lorem3',         
         },
